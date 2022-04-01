@@ -19,10 +19,10 @@
         		{% endfor %}
 		</ul>
 
-        	<form action="" method="POST">
-		{{form.hidden_tag()}}
-		<p>{{form.city()}}</p>
-		<p>{{form.submit()}}</p>
+        	<form>
+			<label>City Name</label><br/>
+                        <input id="" type="text" maxlength="32" name="city_name"><br/><br/>
+                        <input type="submit" value="Submit">
 		</form>
 	</body>
 </html>
