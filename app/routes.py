@@ -12,6 +12,6 @@ city_names = ['Paris', 'London', 'Rome', 'Tahiti']
 @myobj.route('/', methods = ['GET', 'POST'])
 def home():
 	form = SubmitForm()
-	if request.methods == 'POST':
+	if request.method == 'POST':
         	flash(format(form.city_name.data))
 	return render_template('home.html', name=name, city_names=city_names, form=form)
