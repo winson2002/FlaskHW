@@ -5,7 +5,7 @@ from flask import request, redirect, render_template, flash
 
 class SubmitForm(FlaskForm):
 	city_name = StringField('city_name')
-	submit = SubmitField('Submit')
+	submit = SubmitField('submit')
 
 name = 'Lisa'
 city_names = ['Paris', 'London', 'Rome', 'Tahiti']
