@@ -19,10 +19,16 @@
         		{% endfor %}
 		</ul>
 
-        	<form>
-			<label>City Name</label><br/>
-                        <input id="" type="text" maxlength="32" name="city_name"><br/><br/>
-                        <input type="submit" value="Submit">
-		</form>
+        	{% block content %}
+			<h2>City Name</h2>
+			<formaction=""method="POST">
+				{{form.hidden_tag()}}
+				<p>
+					{{form.city_name.label}}<br/>
+					{{form.city_name(size=32)}}
+				</p>
+				<p>{{form.Submit()}}</p>
+			</form>
+		{% endblock %}	
 	</body>
 </html>
