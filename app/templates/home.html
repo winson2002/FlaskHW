@@ -14,15 +14,15 @@
 		<ahref="www.google.com">notgoogle</a>
 
 		<ul>
-        		{% for city_name in city_names %}
-                		<li>{{city_names}}</li>
+        		{% for city in city_names %}
+                		<li>{{city}}</li>
         		{% endfor %}
 		</ul>
 
-        	<form>
-			<label>City Name</label><br/>
-        		<input id="" type="text" maxlength="32" name="city_name"><br/><br/>
-        		<input type="submit" value="Submit">
+        	<form action="" method="POST">
+		{{form.hidden_tag()}}
+		<p>{{form.city()}}</p>
+		<p>{{form.submit()}}</p>
 		</form>
 	</body>
 </html>
