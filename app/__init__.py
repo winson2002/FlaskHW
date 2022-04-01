@@ -1,4 +1,4 @@
-from flask import Flask, flash, request, redirect, render_template
+from flask import Flask
 
 myobj = Flask(__name__)
 myobj.config.from_mapping(

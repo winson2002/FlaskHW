@@ -1,7 +1,7 @@
 from app import myobj
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
-from flask import Flask, request, redirect, render_template, flash
+from flask import request, redirect, render_template, flash
 
 class SubmitForm(FlaskForm):
 	city_name = StringField('city_name')

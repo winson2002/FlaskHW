@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<body>
-        	{% with messages  = get_flashed_message() %}
+        	{% with messages  = get_flashed_messages() %}
 		{% if messages %}
 			<ul>
 				<li>{{message[0]}}</li>
