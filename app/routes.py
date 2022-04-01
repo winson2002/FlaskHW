@@ -1,4 +1,4 @@
-from app import myapp_obj
+from app import myobj
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 
@@ -9,7 +9,7 @@ class SubmitForm(FlaskForm):
 name = 'Lisa'
 city_names = ['Paris', 'London', 'Rome', 'Tahiti']
 
-@myapp_obj.route("/", methods = ['GET', 'POST'])
+@myobj.route("/", methods = ['GET', 'POST'])
 def home():
 	form = SubmitForm()
 	if request.method == "POST":
