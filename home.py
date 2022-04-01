@@ -10,7 +10,7 @@ def home():
 	return '''
 	<html>
 	<body>
-		<h1>Welcome'''+name+'''!<h1>
+		<h1>Welcome'''+name+'''!</h1>
 
 		<ahref="www.google.com">notgoogle</a>
 
@@ -23,4 +23,4 @@ def home():
 	</body>
 	</html>'''
 
-myapp_obj.run()
+#myapp_obj.run()
